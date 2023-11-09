@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes!!!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(238, 217, 180);
+}
+header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: black;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header_logo{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+.header_title{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.header-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-list a li{
+    list-style: none;
+    margin: 18px;
+}
+.header-list a li:hover{
+    transform: translateY(3px);
+    transition: 0.2sec;
+}
+.burger_menu img{
+    display: none;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.inactive{
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media ( max-width: 700px ){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .header-list{
+        display: none;
+    }
+    .burger_menu img{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .header_title{
+    display: none;
+    }
+    .header_logo{
+    width: 60px;
+    height: 60px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="#"><img class="header_logo" src="./src/assets/libro-de-recetas-freepik.png" alt=""></a>
+            <a href="#" class="header_title">RECIPES :)</a>
+        </div>
+
+        <div class="burger_menu">
+            <img src="./src/assets/barra-de-menus (1).png" alt="burguerMenu">
+        </div>
+
+        <ul class="header-list">
+            <a href=""><li class="header-list-element">Home</li></a>
+            <a href=""><li class="header-list-element">Menu</li></a>
+            <a href=""><li class="header-list-element">About</li></a>
+        </ul>
+    </header>
+
+</body>
+</html>
+
