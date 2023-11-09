@@ -43,7 +43,7 @@
         }
         .header-list a li:hover{
             transform: translateY(3px);
-            transition: 0.2sec;
+            transition: 0.2s;
         }
         .burger_menu img{
             display: none;
