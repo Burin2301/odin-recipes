@@ -1,6 +1,6 @@
 import { header_main } from './modules/navbar';
 import { home } from './modules/home';
-
+import { recipes } from './modules/recipes';
 import { renderAbout } from './modules/about';
 import { footer_main } from './modules/footer';
 import "../src/styles/header.css";
@@ -30,6 +30,11 @@ function renderHomePage(){
     content.appendChild(home);
     content.appendChild(footer_main);
 }
+function renderRecipesPage(){
+    content.appendChild(header_main);
+    content.appendChild(recipes);
+    content.appendChild(footer_main);
+}
 function renderAboutPage(){
     content.appendChild(header_main);
     content.appendChild(renderAbout);
@@ -48,7 +53,12 @@ document.addEventListener("click", (e)=>{
         case "aboutBtn":
             content.innerHTML = ""
             renderAboutPage();
-            break
+            break;
+        case "recipesBtn":
+        case "toRecipes":
+            content.innerHTML = ""
+            renderRecipesPage();
+            break;
     }
 })
 

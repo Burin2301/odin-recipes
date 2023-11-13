@@ -7,7 +7,7 @@ const content = `
 <header>
 <div class="header-left">
     <a href="#"><img class="header_logo" src="${logo}" alt=""></a>
-    <a href="#" class="header_title">RECIPES :)</a>
+    <a href="#" class="header_title">RECIPES 😀</a>
 </div>
 
 <div class="burger_menu">

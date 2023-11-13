@@ -1,2 +1,0 @@
-recipeLogo = Freepik
-menu_logo = Md Tanvirul Haque

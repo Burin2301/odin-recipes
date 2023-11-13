@@ -1,7 +1,7 @@
 const aboutContainer = document.createElement("div")
 aboutContainer.classList.add("about-container")
 
-const titleContent = "About Us"
+const titleContent = "About RECIPES 😀"
 const aboutTitle = document.createElement("h2")
 aboutTitle.textContent = titleContent
 aboutTitle.classList.add("about-title")
