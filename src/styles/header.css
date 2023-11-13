@@ -18,6 +18,8 @@
             justify-content: space-between;
             padding: 10px 40px;
             background-color: black;
+            position: absolute;
+            top: 0;
         }
         .header-left{
             display: flex;
@@ -37,11 +39,13 @@
             align-items: center;
             justify-content: space-around;
         }
-        .header-list a li{
+        .header-list li{
             list-style: none;
             margin: 18px;
+            color: rgb(238, 217, 180);
+            cursor: pointer;
         }
-        .header-list a li:hover{
+        .header-list li:hover{
             transform: translateY(3px);
             transition: 0.2s;
         }

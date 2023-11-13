@@ -15,9 +15,9 @@ const content = `
 </div>
 
 <ul class="header-list">
-    <a href=""><li class="header-list-element">Home</li></a>
-    <a href=""><li class="header-list-element">Menu</li></a>
-    <a href=""><li class="header-list-element">About</li></a>
+    <li id="homeBtn" class="header-list-element">Home</li>
+    <li id="recipesBtn" class="header-list-element">Recipes</li>
+    <li id="aboutBtn" class="header-list-element">About</li>
 </ul>
 </header>
 
