@@ -1,17 +1,16 @@
 import logo from "../assets/libro-de-recetas-freepik.png"
 import burgerMenu from "../assets/barra-menu.png"
 
-const header = document.createElement("div")
+const header = document.createElement("header")
 
 const content = `
-<header>
 <div class="header-left">
     <a href="#"><img class="header_logo" src="${logo}" alt=""></a>
     <a href="#" class="header_title">RECIPES 😀</a>
 </div>
 
 <div id="mobile_menu" class="burger_menu">
-    <img class="burger_img" src="${burgerMenu}" alt="burguerMenu">
+    <img id="burguerVisible" class="burger_img" src="${burgerMenu}" alt="burguerMenu">
 </div>
 
 <ul class="header-list">
@@ -19,8 +18,6 @@ const content = `
     <li id="recipesBtn" class="header-list-element">Recipes</li>
     <li id="aboutBtn" class="header-list-element">About</li>
 </ul>
-</header>
-
 `
 header.innerHTML = content
 

@@ -1,9 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 body{
     min-height: 100%;
     width: 100%;
+    background-image:url("../assets/bg-image-darken.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 html{
     height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; 
+}
+#content{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: rgb(238, 217, 180);
+}
+header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header_logo{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+.header_title{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.header-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-list li{
+    list-style: none;
+    margin: 18px;
+    color: rgb(238, 217, 180);
+    cursor: pointer;
+}
+.header-list li:hover{
+    transform: translateY(3px);
+    transition: 0.2s;
+}
+.burger_menu .burger_img{
+    display: none;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #7e7ce8;
+    border-radius: 10px;
+}
+.inactive{
+    display: none;
 }
 .home-container,
 .about-container{
@@ -13,9 +81,6 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image:url("../assets/bg-image-darken.jpg");
-    background-size: cover;
-    background-attachment: fixed;
     overflow: scroll;
 }
 .home-title,
@@ -46,16 +111,13 @@ html{
 .about-developer,
 .about-github,
 .about-text,
-.recipeName
-{
+.recipeName{
     text-align: center;
     line-height: 2rem;
     color: white;
     font-weight: bold;
 }
-
 /* RECIPES */
-
 .recipe-container{
     height: 100vh;
     width: 100%;
@@ -65,15 +127,10 @@ html{
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-
-
-
-    background-image:url("../assets/bg-image-darken.jpg");
     background-size: cover;
     background-attachment: fixed;
     overflow: scroll;
 }
-
 .recipe-card{
     display: flex;
     width: 200px;
@@ -93,4 +150,112 @@ html{
     width: 150px;
     height: 150px;
     border-radius: 20px;
+}
+.github_link{
+    text-decoration: none;
+    color: rgb(203, 145, 44);
+}
+footer{
+    position: fixed;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+.p_footer{
+    width: 30%;
+    text-align: center;
+    font-size: .6rem;
+    color: rgb(238, 217, 180);
+}
+span{
+    color: rgb(203, 145, 44);
+}
+span,
+.github_link{
+    font-size: .8rem;
+}
+.developer{
+    margin-top: 2px;
+    padding: 4px;
+    background-color: rgb(89, 80, 80);
+    border-radius: 8px;
+}
+
+/* MOBILE MENU */
+.mobile_menu{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 90px;
+    background-color: #7e7ce8;
+    border-radius: 0 0 20px 20px;
+    color: white;
+}
+.mobile_ul{
+    gap: 10px;
+    list-style: none;
+}
+.mobile_option{
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    font-size: 3rem;
+    border-bottom: white solid 4px;
+}
+
+/* MEDIA QUERIES */
+@media ( max-width: 700px ){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    *{
+        font-size: 16px;
+    }
+    .header-list{
+        display: none;
+    }
+    .burger_menu .burger_img{
+        display: block;
+        width: 54px;
+        height: 54px;
+    }
+    .header_title{
+    display: none;
+    }
+    .header_logo{
+    width: 60px;
+    height: 60px;
+    }
+    .p_footer{
+        display: none;
+    }
+    .developer{
+        display: block;
+    }
+    .recipe-card{
+        width: 200px;
+        height: 200px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .recipe-container{
+        align-content: center;
+        gap: 14px;
+        overflow: scroll;
+    }
+    .recipeImg{
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+    }
 }

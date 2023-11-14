@@ -1,6 +1,6 @@
 const homePage = document.createElement('div')
+homePage.classList.add("home-container")
 const homeContent = `
-<div class="home-container">
         <h2 class="home-title">Welcome to Recipes :)</h2>
         <p class="home-intro">
             This page was created for us to share our best recipes for all situations!.
@@ -14,8 +14,6 @@ const homeContent = `
             Share that recipe with us and let us become a great community that shares the best dishes we had ever taste!
         </p>
         <button class="home-button" id="toRecipes">Go to the recipe list</button>
-
-    </div>
 `
 
 homePage.innerHTML = homeContent

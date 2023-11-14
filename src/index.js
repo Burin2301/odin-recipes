@@ -3,34 +3,12 @@ import { home } from './modules/home';
 import { recipes } from './modules/recipes';
 import { renderAbout } from './modules/about';
 import { footer_main } from './modules/footer';
-// import { mobile_menu } from './modules/mobile_menu';
-import "../src/styles/header.css";
+import { mobile_menu } from './modules/mobile_menu';
 import "../src/styles/main.css";
-import "../src/styles/footer.css";
 
 
 // Get the main div where HTML will be injected
 const content = document.querySelector("#content");
-
-// This function creates all the HTML elements that needs to be added
-// It passes all the info needed for the element to be created, recognized by the query and stylized properly, then returns the element, which should be added to the DOM
-function createHtmlElements(type, id, arrayClass, content){
-    const element = document.createElement(type);
-    if (id) element.id = id;
-    if (arrayClass){
-        arrayClass.forEach( (myClass) => element.classlist.add(myClass) )
-    };
-    if(content) element.textContent = content;
-
-    return element;
-}
-
-
-// Function that checks if burger-menu is visible
-
-// function burguerVisible(){
-
-// }
 
 // The RenderXpage function creates the elements needed for the page to load properly
 function renderHomePage(){
@@ -48,27 +26,42 @@ function renderAboutPage(){
     content.appendChild(renderAbout);
     content.appendChild(footer_main);
 }
+function renderMobileMenu(){
+    content.appendChild(header_main);
+    content.appendChild(mobile_menu);
+    content.appendChild(footer_main);
+}
 
 // Function that handles the button events and render the page as needed using the required function
 
+// This Function also checks if burger-menu is visible
+
 document.addEventListener("click", (e)=>{
     const idBtn = e.target.id;
+
     switch(idBtn){
         case "homeBtn":
+        case "homeBtnMobile":
             content.innerHTML = ""
             renderHomePage();
             break;
         case "aboutBtn":
+        case "aboutBtnMobile":
             content.innerHTML = ""
             renderAboutPage();
             break;
         case "recipesBtn":
         case "toRecipes":
+        case "recipesBtnMobile":
             content.innerHTML = ""
             renderRecipesPage();
             break;
-        // case "mobile_menu":
-            
+        case "burguerVisible":
+            content.innerHTML = ""
+            renderMobileMenu();
+            break
+
+
     }
 })
 
@@ -78,6 +71,3 @@ document.addEventListener("click", (e)=>{
 renderHomePage()
 
 
-
-
-export{ content, createHtmlElements };

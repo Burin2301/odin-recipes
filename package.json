@@ -2,7 +2,7 @@
   "name": "odin-recipes",
   "version": "1.0.0",
   "description": "I will create a recipes sited, below you will find what i learned from this project:",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
