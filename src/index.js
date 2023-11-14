@@ -3,6 +3,7 @@ import { home } from './modules/home';
 import { recipes } from './modules/recipes';
 import { renderAbout } from './modules/about';
 import { footer_main } from './modules/footer';
+// import { mobile_menu } from './modules/mobile_menu';
 import "../src/styles/header.css";
 import "../src/styles/main.css";
 import "../src/styles/footer.css";
@@ -23,6 +24,13 @@ function createHtmlElements(type, id, arrayClass, content){
 
     return element;
 }
+
+
+// Function that checks if burger-menu is visible
+
+// function burguerVisible(){
+
+// }
 
 // The RenderXpage function creates the elements needed for the page to load properly
 function renderHomePage(){
@@ -59,6 +67,8 @@ document.addEventListener("click", (e)=>{
             content.innerHTML = ""
             renderRecipesPage();
             break;
+        // case "mobile_menu":
+            
     }
 })
 

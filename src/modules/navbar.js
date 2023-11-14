@@ -10,8 +10,8 @@ const content = `
     <a href="#" class="header_title">RECIPES 😀</a>
 </div>
 
-<div class="burger_menu">
-    <img src="${burgerMenu}" alt="burguerMenu">
+<div id="mobile_menu" class="burger_menu">
+    <img class="burger_img" src="${burgerMenu}" alt="burguerMenu">
 </div>
 
 <ul class="header-list">

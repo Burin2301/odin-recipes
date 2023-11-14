@@ -49,12 +49,12 @@
             transform: translateY(3px);
             transition: 0.2s;
         }
-        .burger_menu img{
+        .burger_menu .burger_img{
             display: none;
             width: 60px;
             height: 60px;
             margin-right: 20px;
-            background-color: white;
+            background-color: #7e7ce8;
             border-radius: 10px;
         }
         .inactive{
@@ -72,10 +72,10 @@
             .header-list{
                 display: none;
             }
-            .burger_menu img{
+            .burger_menu .burger_img{
                 display: block;
-                width: 30px;
-                height: 30px;
+                width: 54px;
+                height: 54px;
             }
             .header_title{
             display: none;

@@ -20,7 +20,7 @@ footer{
 span{
     color: rgb(203, 145, 44);
 }
-span, 
+span,
 .github_link{
     font-size: .8rem;
 }
@@ -29,4 +29,16 @@ span,
     padding: 4px;
     background-color: rgb(89, 80, 80);
     border-radius: 8px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 700px){
+    .p_footer{
+        display: none;
+    }
+    .developer{
+        display: block;
+    }
 }
