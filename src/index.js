@@ -6,6 +6,11 @@ import { footer_main } from './modules/footer';
 import { mobile_menu } from './modules/mobile_menu';
 import "../src/styles/main.css";
 
+// HTML Extra
+// import lasagna from "./recipes/lasagna.html";
+// import gingerBeef from "./recipes/crispy-ginger-beef.html"
+// import shrimpTempura from "./recipes/crispy-shrimp-tempura.html"
+
 
 // Get the main div where HTML will be injected
 const content = document.querySelector("#content");
